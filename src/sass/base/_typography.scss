@@ -1,0 +1,64 @@
+.hear-line-bottom:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 0;
+    border-bottom: 1px solid #ddd;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale3d(0.5, 0.5, 0.5);
+    transform: scale3d(0.5, 0.5, 0.5);
+    bottom: -1px;
+}
+
+.hear-line-top:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 0;
+    border-bottom: 1px solid #ddd;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale3d(0.5, 0.5, 0.5);
+    transform: scale3d(0.5, 0.5, 0.5);
+    top: -1px;
+}
+
+.hear-line-left:before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    width: 0;
+    height: 200%;
+    border-left: 1px solid #ddd;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale3d(0.5, 0.5, 0.5);
+    transform: scale3d(0.5, 0.5, 0.5);
+    top: 0;
+}
+
+.hear-line-right:before {
+    content: "";
+    position: absolute;
+    right: -1px;
+    width: 0;
+    height: 200%;
+    border-right: 1px solid #ddd;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale3d(0.5, 0.5, 0.5);
+    transform: scale3d(0.5, 0.5, 0.5);
+    top: 0;
+}
+
+.hear-line-top,
+.hear-line-bottom,
+.hear-line-left,
+.hear-line-right {
+    position: relative;
+    border: none;
+    clear: both;
+}

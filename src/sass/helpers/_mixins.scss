@@ -1,0 +1,17 @@
+@import "./functions";
+
+@mixin bg($url, $height) {
+    height: px2rem($height);
+    background: url($url) no-repeat;
+    background-size: 100% 100%;
+}
+
+@mixin prefix($k, $v...) {
+    #{$k}: $v;
+    -webkit-#{$k}: $v;
+}
+
+@mixin prefixv($k, $v) {
+    #{$k}: $v;
+    #{$k}: -webkit-#{$v};
+}

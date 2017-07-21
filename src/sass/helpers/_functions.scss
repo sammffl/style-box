@@ -1,0 +1,6 @@
+/* 设计稿px换算成rem，配合计算不同屏幕html字体大小一起使用 */
+@function px2rem($px, $base: 37.5) {
+    @return ($px / $base) * 1rem;
+}
+
+

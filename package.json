@@ -1,0 +1,50 @@
+{
+    "name": "webpack-noframe-template",
+    "version": "1.0.0",
+    "description": "简单页面使用webpack打包",
+    "main": "index.js",
+    "scripts": {
+        "start": "NODE_ENV=mock node server.js",
+        "deploy:mock": "rm -rf dist && NODE_ENV=mock webpack --config webpack.config.deploy.js --progress --colors -d -p",
+        "deploy:prod": "rm -rf dist && NODE_ENV=production webpack --config webpack.config.deploy.js --progress --colors -p",
+        "deploy:test": "rm -rf dist && NODE_ENV=test webpack --config webpack.config.deploy.js --progress --colors -d -p"
+    },
+    "repository": "git@github.com:sammffl/webpack-noframe-template.git",
+    "author": "sammffl <samfec@163.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer-loader": "^3.2.0",
+        "babel-core": "^6.21.0",
+        "babel-eslint": "^7.1.1",
+        "babel-loader": "^6.2.10",
+        "babel-plugin-transform-class-properties": "^6.23.0",
+        "babel-preset-es2015": "^6.18.0",
+        "color": "^1.0.3",
+        "css-loader": "^0.26.1",
+        "ejs": "^2.5.5",
+        "eslint": "^3.16.1",
+        "eslint-config-airbnb": "^14.1.0",
+        "eslint-plugin-import": "^2.2.0",
+        "eslint-plugin-jsx-a11y": "^4.0.0",
+        "express": "^4.14.0",
+        "extract-text-webpack-plugin": "^1.0.1",
+        "file-loader": "^0.9.0",
+        "html-loader": "^0.4.4",
+        "html-webpack-plugin": "^2.25.0",
+        "ip": "^1.1.4",
+        "node-sass": "^4.5.3",
+        "postcss-loader": "^1.2.1",
+        "sass-loader": "^4.1.1",
+        "style-loader": "^0.13.1",
+        "url-loader": "^0.5.7",
+        "webpack": "^1.14.0",
+        "webpack-dev-middleware": "^1.9.0",
+        "webpack-dev-server": "^1.16.2",
+        "webpack-hot-middleware": "^2.14.0"
+    },
+    "dependencies": {
+        "jquery": "^3.1.1",
+        "reqwest": "^2.0.5",
+        "slot-game-js": "^0.3.0"
+    }
+}
